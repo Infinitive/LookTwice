@@ -1,0 +1,28 @@
+---
+import '../styles/global.css';
+const { title = 'LookTwice', description = 'A living record of a person in motion.' } = Astro.props;
+const path = Astro.url.pathname;
+const links = [
+  ['Story', '/story/'], ['Notes', '/notes/'], ['Things', '/things/'], ['Now', '/now/']
+];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="/">LOOK<span>TWICE</span></a>
+      <nav aria-label="Primary">
+        {links.map(([label, href]) => <a class:list={{active: path.startsWith(href)}} href={href}>{label}</a>)}
+      </nav>
+    </header>
+    <main id="content"><slot /></main>
+    <footer><span>LookTwice</span><span>A living record, not a finished portrait.</span></footer>
+  </body>
+</html>
