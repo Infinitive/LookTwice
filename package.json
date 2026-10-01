@@ -1,17 +1,20 @@
 {
-  "name": "looktwice-v4-durable",
+  "name": "looktwice-v5",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "check": "astro check",
-    "build": "astro check && astro build",
+    "validate:content": "node scripts/validate-content.mjs",
+    "editorial": "node scripts/editorial-dashboard.mjs",
+    "check": "npm run validate:content && astro check",
+    "build": "npm run check && astro build",
     "preview": "astro preview"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.0",
     "@astrojs/sitemap": "^3.0.0",
-    "astro": "^5.0.0"
+    "astro": "^5.0.0",
+    "gray-matter": "^4.0.3"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.0",

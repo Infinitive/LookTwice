@@ -1,8 +1,4 @@
 ---
-import { getCollection } from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
-const entries = (await getCollection('story', ({ data }) => !data.draft)).sort((a,b) => a.data.sortOrder-b.data.sortOrder);
+import BaseLayout from '../../layouts/BaseLayout.astro';import {publicCollection} from '../../lib/content';const entries=await publicCollection('story');
 ---
-<BaseLayout title="Story | LookTwice" description="Retrospective chapters about where Johnathan came from and what remains at stake.">
-<section class="page"><p class="eyebrow">01 / Retrospective</p><h1 class="page-title">Story</h1><p class="page-intro">The autobiographical foundation, told as chapters rather than a résumé.</p><div class="index-list">{entries.map((entry, i) => <a href={`/story/${entry.id}/`}><span>{String(i+1).padStart(2,'0')}</span><div><h2>{entry.data.title}</h2><p>{entry.data.summary}</p></div></a>)}</div></section>
-</BaseLayout>
+<BaseLayout title="Story | LookTwice"><section class="page"><p class="eyebrow">01 / Retrospective</p><h1 class="page-title">Story</h1><p class="page-intro">The autobiographical foundation, told as chapters rather than a résumé.</p><div class="index-list">{entries.map((entry,i)=><a href={`/story/${entry.id}/`}><span>{String(i+1).padStart(2,'0')}</span><div><h2>{entry.data.title}</h2><p>{entry.data.summary}</p></div></a>)}</div></section></BaseLayout>

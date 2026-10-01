@@ -1,6 +1,4 @@
 ---
-import { getCollection } from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
-const entries = (await getCollection('notes', ({ data }) => !data.draft)).sort((a,b) => b.data.published.valueOf()-a.data.published.valueOf());
+import BaseLayout from '../../layouts/BaseLayout.astro';import {publicCollection} from '../../lib/content';const entries=(await publicCollection('notes')).sort((a,b)=>(b.data.published?.valueOf()??0)-(a.data.published?.valueOf()??0));
 ---
-<BaseLayout title="Notes | LookTwice" description="Dated observations, unfinished thoughts, and ideas being worked through."><section class="page"><div class="page-heading-row"><div><p class="eyebrow">02 / Ongoing</p><h1 class="page-title">Notes</h1></div><a class="rss-link" href="/rss.xml">RSS feed ↗</a></div><div class="notes-wall">{entries.map((entry) => <a class="note" href={`/notes/${entry.id}/`}><p class="eyebrow">{entry.data.status} / {entry.data.published.toLocaleDateString('en-US',{month:'short',year:'numeric'})}</p><h2>{entry.data.title}</h2><p>{entry.data.summary}</p></a>)}</div></section></BaseLayout>
+<BaseLayout title="Notes | LookTwice"><section class="page"><div class="page-heading-row"><div><p class="eyebrow">02 / Ongoing</p><h1 class="page-title">Notes</h1></div><a class="rss-link" href="/rss.xml">RSS feed ↗</a></div><div class="notes-wall">{entries.map(entry=><a class="note" href={`/notes/${entry.id}/`}><p class="eyebrow">{entry.data.noteType} / {entry.data.published?.toLocaleDateString('en-US',{month:'short',year:'numeric'})}</p><h2>{entry.data.title}</h2><p>{entry.data.summary}</p></a>)}</div></section></BaseLayout>

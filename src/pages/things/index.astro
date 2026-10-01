@@ -1,6 +1,4 @@
 ---
-import { getCollection } from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
-const entries = (await getCollection('things', ({ data }) => !data.draft)).sort((a,b) => a.data.sortOrder-b.data.sortOrder);
+import BaseLayout from '../../layouts/BaseLayout.astro';import {publicCollection} from '../../lib/content';const entries=await publicCollection('things');
 ---
-<BaseLayout title="Things | LookTwice" description="Media, objects, practices, places, and projects worth returning to."><section class="page"><p class="eyebrow">03 / Returning</p><h1 class="page-title">Things</h1><p class="page-intro">A curated catalogue of what keeps returning after the immediate intensity fades.</p><div class="things">{entries.map((entry) => <a class="thing" href={`/things/${entry.id}/`}><p class="eyebrow">{entry.data.kind}</p><h2>{entry.data.title}</h2><p>{entry.data.summary}</p></a>)}</div></section></BaseLayout>
+<BaseLayout title="Things | LookTwice"><section class="page"><p class="eyebrow">03 / Returning</p><h1 class="page-title">Things</h1><p class="page-intro">A curated catalogue of what keeps returning after the immediate intensity fades.</p><div class="things">{entries.map(entry=><a class="thing" href={`/things/${entry.id}/`}><p class="eyebrow">{entry.data.kind}</p><h2>{entry.data.title}</h2><p>{entry.data.summary}</p></a>)}</div></section></BaseLayout>
