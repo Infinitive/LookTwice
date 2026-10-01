@@ -1,4 +1,8 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+const entries = (await getCollection('story', ({ data }) => !data.draft)).sort((a,b) => a.data.sortOrder-b.data.sortOrder);
 ---
-<BaseLayout title="Story | LookTwice"><section class="page"><p class="eyebrow">01 / Retrospective</p><h1 class="page-title">Story</h1><div class="story-grid"><div class="chapter-art" role="img" aria-label="Animated-style abstract bands in blue, orange, and yellow"></div><article class="chapter-copy"><p class="eyebrow">Opening chapter / Placeholder</p><h2>Becoming reliable.</h2><p class="prose">A public-safe beginning about military service, education, marriage, Dallas, the intended return to San Antonio, and the ongoing work of becoming someone who can be counted on.</p></article></div></section></BaseLayout>
+<BaseLayout title="Story | LookTwice" description="Retrospective chapters about where Johnathan came from and what remains at stake.">
+<section class="page"><p class="eyebrow">01 / Retrospective</p><h1 class="page-title">Story</h1><p class="page-intro">The autobiographical foundation, told as chapters rather than a résumé.</p><div class="index-list">{entries.map((entry, i) => <a href={`/story/${entry.id}/`}><span>{String(i+1).padStart(2,'0')}</span><div><h2>{entry.data.title}</h2><p>{entry.data.summary}</p></div></a>)}</div></section>
+</BaseLayout>

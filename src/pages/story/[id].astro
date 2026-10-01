@@ -1,0 +1,11 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+export async function getStaticPaths(){
+ const entries = await getCollection('story', ({data}) => !data.draft);
+ return entries.map((entry) => ({ params:{ id:entry.id }, props:{ entry } }));
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+<BaseLayout title={`${entry.data.title} | Story | LookTwice`} description={entry.data.summary} type="article"><article class="detail"><p class="eyebrow">Story / {entry.data.period ?? 'Retrospective'}</p><h1>{entry.data.title}</h1><p class="detail-summary">{entry.data.summary}</p><div class="shape-banner" aria-hidden="true"><i></i><i></i><i></i></div><div class="article-body"><Content /></div></article></BaseLayout>

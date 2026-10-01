@@ -1,8 +1,17 @@
 ---
 const words = 'STORY • NOTES • THINGS • NOW • RECORDS • RECIPES • ROOMS • ROADS • FILMS • THRIFT STORES • SCHOOL • HOME • ORDINARY LIFE •';
 ---
-<div class="ticker" aria-label="Themes in LookTwice">
-  <div class="ticker-track">
-    <span>{words}</span><span aria-hidden="true">{words}</span>
-  </div>
+<div class="ticker full-bleed" data-ticker>
+  <div class="ticker-track" aria-label="Themes in LookTwice"><span>{words}</span><span aria-hidden="true">{words}</span></div>
+  <button class="ticker-toggle" type="button" aria-pressed="false" aria-label="Pause scrolling ticker">Pause</button>
 </div>
+<script>
+  const ticker = document.querySelector('[data-ticker]');
+  const button = ticker?.querySelector('button');
+  button?.addEventListener('click', () => {
+    const paused = ticker?.classList.toggle('is-paused') ?? false;
+    button.setAttribute('aria-pressed', String(paused));
+    button.setAttribute('aria-label', paused ? 'Play scrolling ticker' : 'Pause scrolling ticker');
+    button.textContent = paused ? 'Play' : 'Pause';
+  });
+</script>

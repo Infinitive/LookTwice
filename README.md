@@ -1,16 +1,28 @@
-# LookTwice V3
+# LookTwice V4
 
-## Run locally
-1. `npm install`
-2. `npm run dev`
+A static Astro site with validated content collections, dynamic entry pages, RSS, sitemap, social metadata, Netlify headers, robots rules, a custom 404 page, and GitHub Actions CI.
 
-## Build
-`npm run build`
+## Local use
 
-Netlify uses `npm run build` and publishes `dist`.
+```bash
+npm install
+npm run dev
+```
 
-## Edit the homepage observation
-Open `src/pages/index.astro` and replace the heading and paragraph inside `.observation-copy`.
+## Validate before pushing
 
-## Add a photo later
-No photo is required. If desired, place one in `public/images/` and set it as the `.observation` background in `src/styles/global.css`.
+```bash
+npm run build
+```
+
+## Add content
+
+Duplicate a Markdown file in `src/content/story`, `src/content/notes`, or `src/content/things`.
+
+- `draft: true` keeps an entry out of public pages and RSS.
+- `featured: true` makes an entry eligible for the homepage.
+- The schema in `src/content.config.ts` stops the build if required fields are missing or invalid.
+
+## Domain
+
+The configured site is `https://looktwice.cc`. If the final public domain differs, update `site` in `astro.config.mjs` and the sitemap URL in `public/robots.txt`.

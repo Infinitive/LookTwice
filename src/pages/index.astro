@@ -1,15 +1,21 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Ticker from '../components/Ticker.astro';
+const notes = (await getCollection('notes', ({ data }) => !data.draft)).sort((a,b) => a.data.sortOrder-b.data.sortOrder);
+const things = (await getCollection('things', ({ data }) => !data.draft)).sort((a,b) => a.data.sortOrder-b.data.sortOrder);
+const story = (await getCollection('story', ({ data }) => !data.draft)).sort((a,b) => a.data.sortOrder-b.data.sortOrder);
+const featuredNote = notes.find((entry) => entry.data.featured) ?? notes[0];
+const featuredThing = things.find((entry) => entry.data.featured) ?? things[0];
+const featuredStory = story.find((entry) => entry.data.featured) ?? story[0];
 ---
 <BaseLayout>
   <section class="hero">
-    <div class="hero-top"><p class="eyebrow">A living record / Johnathan Jonas</p><p class="eyebrow">Observation 001</p></div>
+    <div class="hero-top"><p class="eyebrow">A living record / Johnathan Jonas</p><p class="eyebrow">Governing observation</p></div>
     <h1>LOOK<span>TWICE</span></h1>
     <div class="observation">
       <div class="wave-field" aria-hidden="true"><i class="wave"></i><i class="wave"></i><i class="wave"></i><i class="wave"></i><i class="wave"></i></div>
-      <span class="observation-number" aria-hidden="true">001</span>
-      <div class="observation-copy"><p class="eyebrow">Current observation</p><h2>The quiet after the dishes are done.</h2><p>The apartment is the same room. The counter is clear. For a few minutes, nothing is asking to be fixed.</p></div>
+      <div class="observation-copy"><p class="eyebrow">The premise</p><h2>A life becomes visible in what keeps earning another look.</h2><p>The objects, places, routines, unfinished projects, and people returned to over time become a record. LookTwice keeps that record without polishing it into a persona.</p></div>
     </div>
     <Ticker />
   </section>
@@ -20,9 +26,9 @@ import Ticker from '../components/Ticker.astro';
   <section class="portals">
     <div class="portals-head"><h2>Enter anywhere.</h2><p>Four relationships to time and attention.</p></div>
     <div class="portal-grid">
-      <a class="portal portal-story" href="/story/"><span class="eyebrow">Story / Retrospective</span><h3>What shaped me, and what remains at stake.</h3><p>Begin with the longer arc.</p></a>
-      <a class="portal portal-notes" href="/notes/"><span class="eyebrow">Notes / Ongoing</span><h3>Attention is taste.</h3><p>Thoughts before they disappear.</p></a>
-      <a class="portal portal-things" href="/things/"><span class="eyebrow">Things / Returning</span><h3>What stays.</h3></a>
+      <a class="portal portal-story" href={`/story/${featuredStory.id}/`}><span class="eyebrow">Story / Retrospective</span><h3>{featuredStory.data.title}</h3><p>{featuredStory.data.summary}</p></a>
+      <a class="portal portal-notes" href={`/notes/${featuredNote.id}/`}><span class="eyebrow">Notes / Ongoing</span><h3>{featuredNote.data.title}</h3><p>{featuredNote.data.summary}</p></a>
+      <a class="portal portal-things" href={`/things/${featuredThing.id}/`}><span class="eyebrow">Things / Returning</span><h3>{featuredThing.data.title}</h3></a>
       <a class="portal portal-now" href="/now/"><span class="eyebrow">Now / Temporary</span><h3>Present.</h3></a>
     </div>
   </section>
