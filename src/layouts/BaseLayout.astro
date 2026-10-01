@@ -1,0 +1,4 @@
+---
+const {title='LookTwice'}=Astro.props;
+---
+<html><head><title>{title}</title><link rel="stylesheet" href="/src/styles/global.css"></head><body><nav><a href='/'><strong>LOOKTWICE</strong></a><div class='links'><a href='/story'>Story</a><a href='/notes'>Notes</a><a href='/things'>Things</a><a href='/now'>Now</a></div></nav><main><slot/></main></body></html>
