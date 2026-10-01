@@ -1,1 +1,13 @@
-{"name":"looktwice-redesign","private":true,"type":"module","scripts":{"dev":"astro dev","build":"astro build","preview":"astro preview"},"dependencies":{"astro":"^5.0.0"}}
+{
+  "name": "looktwice-v3-observation",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^5.0.0"
+  }
+}
