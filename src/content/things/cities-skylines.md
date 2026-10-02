@@ -2,7 +2,9 @@
 title: "Cities: Skylines"
 summary: "The game that made city planning visible as a set of human choices rather than a fixed background."
 updated: 2026-09-30
-status: ready
+status: published
+published: 2026-09-30
+nextAction: "None"
 homepage: false
 sortOrder: 7
 kind: media

@@ -2,7 +2,9 @@
 title: "Arrival"
 summary: "Science fiction about language, memory, time, and choosing love despite knowing its cost."
 updated: 2026-09-30
-status: ready
+status: published
+published: 2026-09-30
+nextAction: "None"
 homepage: true
 sortOrder: 1
 kind: media

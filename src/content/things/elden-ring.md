@@ -2,7 +2,9 @@
 title: "Elden Ring"
 summary: "More than 110 hours, nearly complete, and an honest record of sustained attention."
 updated: 2026-09-30
-status: ready
+status: published
+published: 2026-09-30
+nextAction: "None"
 homepage: false
 sortOrder: 6
 kind: media

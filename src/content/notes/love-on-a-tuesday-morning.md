@@ -3,6 +3,7 @@ title: "Love on a Tuesday Morning"
 summary: "Marriage lives less in grand declarations than in meals, errands, patience, repair, dogs, and the labor of making a home."
 updated: 2026-09-30
 status: published
+published: 2026-10-01
 homepage: false
 sortOrder: 2
 noteType: finished

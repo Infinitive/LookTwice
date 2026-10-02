@@ -3,6 +3,7 @@ title: "The Places That Made Me"
 summary: "Wichita, Slidell, San Antonio, and Dallas: a life shaped by seasons, movement, military service, grief, marriage, diagnosis, and the repeated work of beginning again."
 updated: 2026-09-30
 status: published
+published: 2026-10-01
 homepage: true
 sortOrder: 1
 place: "Wichita, Slidell, San Antonio, and Dallas"

@@ -2,10 +2,11 @@
 title: "Hereditary"
 summary: "A favorite horror film that became an unlikely Christmas tradition alongside cookies and a gingerbread treehouse."
 updated: 2026-09-30
-status: ready
+status: published
+published: 2026-09-30
+nextAction: "None"
 homepage: false
 sortOrder: 5
-nextAction: "Review the family framing, then publish."
 kind: media
 creator: "Ari Aster"
 year: 2018

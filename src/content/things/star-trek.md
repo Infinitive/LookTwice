@@ -2,7 +2,9 @@
 title: "Star Trek"
 summary: "Voyager, The Next Generation, Enterprise, Deep Space Nine, Lower Decks, and a stubborn belief in human improvement."
 updated: 2026-09-30
-status: ready
+status: published
+published: 2026-09-30
+nextAction: "None"
 homepage: false
 sortOrder: 2
 kind: media

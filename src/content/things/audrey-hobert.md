@@ -2,7 +2,9 @@
 title: "Audrey Hobert"
 summary: "Chaotic, messy, Gen Z, catchy, insecure, relatable, and just plain fun."
 updated: 2026-09-30
-status: ready
+status: published
+published: 2026-09-30
+nextAction: "None"
 homepage: false
 sortOrder: 4
 kind: media

@@ -3,6 +3,7 @@ title: "I Should Never Forget My Capacity for Real Change"
 summary: "Hopelessness erases evidence. The record puts it back."
 updated: 2026-09-30
 status: published
+published: 2026-10-01
 homepage: false
 sortOrder: 1
 noteType: finished

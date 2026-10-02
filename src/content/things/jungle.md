@@ -2,7 +2,9 @@
 title: "Jungle"
 summary: "Funk, modern disco, neo-soul, organic dance, and one night that became worth recording."
 updated: 2026-09-30
-status: ready
+status: published
+published: 2026-09-30
+nextAction: "None"
 homepage: false
 sortOrder: 3
 kind: media

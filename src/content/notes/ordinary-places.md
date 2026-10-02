@@ -3,6 +3,7 @@ title: "Ordinary Places"
 summary: "Meaning accumulates in kitchens, thrift stores, patios, parking lots, highways, and rooms long before they look important."
 updated: 2026-09-30
 status: published
+published: 2026-10-01
 homepage: true
 sortOrder: 3
 noteType: finished
