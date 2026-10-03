@@ -2,4 +2,4 @@
 import {relatedEntries,entryUrl} from '../lib/content';
 const {refs=[]}=Astro.props;const entries=await relatedEntries(refs);
 ---
-{entries.length>0&&<aside class="related"><p class="eyebrow">Continue looking</p><div>{entries.map(entry=><a href={entryUrl(entry)}><small>{entry.collection}</small><strong>{entry.data.title}</strong><span>{entry.data.summary}</span></a>)}</div></aside>}
+{entries.length>0&&<aside class="related"><p class="eyebrow">Continue looking</p><div>{entries.map(entry=><a class="card related-card" href={entryUrl(entry)}><small>{entry.collection}</small><strong>{entry.data.title}</strong><span>{entry.data.summary}</span></a>)}</div></aside>}
