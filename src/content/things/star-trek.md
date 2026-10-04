@@ -7,15 +7,15 @@ published: 2026-09-30
 nextAction: "None"
 homepage: false
 sortOrder: 2
-kind: media
+category: watching
 creator: "Gene Roddenberry and many others"
 year: "1966–present"
-editorialNote: "Room: Watching"
+editorialNote: "Category: Watching"
 related: ["things/cities-skylines", "notes/capacity-for-real-change"]
 ---
 It started with Voyager and Captain Janeway.
 
-From there came The Next Generation, Enterprise, Deep Space Nine, Lower Decks, and the larger world built across them and the rest of the series. The ships, crews, and eras differ, but the element that keeps calling me back is consistent: Star Trek believes that human beings can improve.
+From there came The Next Generation, Enterprise, Deep Space Nine, Lower Decks, and the larger world built across them and the rest of the series. The ships, crews, and eras differ, but the element that keeps calling me back is consistent: Star Trek believes that **human beings can improve**.
 
 The belief is not naive. These stories contain prejudice, war, trauma, bureaucracy, ambition, and institutional failure. Deep Space Nine in particular refuses the idea that progress makes moral conflict disappear. What the franchise preserves is the conviction that curiosity, knowledge, cooperation, and principled action remain worthwhile even when people fall short.
 
@@ -25,7 +25,7 @@ Two stories linger with me more than most. In "The Measure of a Man," the questi
 
 The Bell Riots episodes of Deep Space Nine ask a related question at the scale of a city. The Sanctuary Districts are not the result of technological failure. They are the result of political choices. People are separated, managed, and hidden because doing so is easier than addressing the underlying problems. As someone drawn to public affairs and city planning, I find that idea difficult to ignore. Star Trek repeatedly argues that institutions matter because they shape daily life, but also that institutions are made by people and can therefore be changed by people.
 
-Both stories reject the comforting belief that progress arrives automatically. Better systems require better choices. The future becomes more humane only when individuals are willing to challenge definitions, assumptions, and arrangements that everyone else has accepted as normal.
+Both stories reject the comforting belief that progress arrives automatically. *Better systems require better choices.* The future becomes more humane only when individuals are willing to challenge definitions, assumptions, and arrangements that everyone else has accepted as normal.
 
 Captain Janeway made intelligence feel like a form of courage. Exploration was not conquest for its own sake. It was attention directed outward. The call to venture into space was also a call to become large enough, disciplined enough, and humane enough to meet what might be found there.
 

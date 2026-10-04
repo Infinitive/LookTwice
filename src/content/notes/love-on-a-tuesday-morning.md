@@ -14,7 +14,7 @@ Love lives in everyday moments.
 Cooking dinner together. Cleaning the apartment and bedroom. Putting up the Christmas tree. Ordering cards. Baking cookies and trying not to make a mess. Grocery shopping. Caring for each other through illness. Driving the entire way to and from Wichita because travel makes us anxious sometimes. 
 This is where marriage actually lives.
 
-It lives in maintenance. Not maintenance as grim obligation, but as the repeated care required by anything meant to last.
+*It lives in maintenance.* Not maintenance as grim obligation, but as the repeated care required by anything meant to last.
 
 A home becomes a home through accumulation. He cooks dinner. I clean the apartment. We make picadillo, pasta bowls, or breakfast. We run errands, repot lilies, buy towels because the old ones have holes, and come home with dirt, pots, and a can of spray paint for a project. We plan holiday travel, dread the drive, take the trip anyway, and return grateful for our own bed.
 
@@ -36,4 +36,4 @@ Love that lasts has to survive Tuesdays. It has to survive fatigue, budgets, err
 
 The extraordinary part is not escaping ordinary life.
 
-The extraordinary part is building one together.
+**The extraordinary part is building one together.**

@@ -6,6 +6,6 @@ The project has three main collections:
 
 - Story: long-form reflections with a real arc and a clear sense of place or time.
 - Notes: shorter observations, drafts, or fragments that are still in motion.
-- Things: objects, media, practices, and places that keep returning in the life of the writer.
+- Things: works and activities, organized as Watching, Listening, and Doing.
 
 A piece belongs here when it records something worth returning to, not merely something worth saying once.

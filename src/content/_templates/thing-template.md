@@ -10,7 +10,7 @@ nextAction: ""
 blockedBy: ""
 editorialNote: ""
 related: []
-kind: object
+category:
 creator: ""
 year:
 ---

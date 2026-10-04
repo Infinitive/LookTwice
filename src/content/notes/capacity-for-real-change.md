@@ -27,9 +27,9 @@ None of this happened because one morning I finally became disciplined. There wa
 
 Change has looked like stop and go. It has looked like progress followed by relapse, honesty followed by avoidance, a clean apartment followed by disorder, a good semester followed by academic panic. It has looked like making a system meant to support my life, then hyperfixating on the system so completely that I ignored the life beside me.
 
-That does not make the change fake. It makes the change incomplete.
+**That does not make the change fake.** It makes the change incomplete.
 
-Hopelessness has a selective memory. In a bad state, the mind presents every failure simultaneously and removes all counterevidence. Being sober for over two weeks disappears. Going to therapy every Wednesday disappears. Returning to class disappears. Cleaning the apartment, cooking, caring for the dogs, finishing assignments, and having the difficult conversation all disappear. The current pain becomes the only available fact.
+*Hopelessness has a selective memory.* In a bad state, the mind presents every failure simultaneously and removes all counterevidence. Being sober for over two weeks disappears. Going to therapy every Wednesday disappears. Returning to class disappears. Cleaning the apartment, cooking, caring for the dogs, finishing assignments, and having the difficult conversation all disappear. The current pain becomes the only available fact.
 
 Reality corrects that distortion.
 

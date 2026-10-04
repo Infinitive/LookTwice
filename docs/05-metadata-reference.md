@@ -29,8 +29,8 @@ This is the metadata contract for LookTwice entries.
 
 ### Things
 
-- `kind`: `media`, `object`, `practice`, `place`, `food`, or `project`
-- `creator`: creator or author when relevant
+- `category`: `watching`, `listening`, or `doing`
+- `creator`: creator or artist when relevant
 - `year`: release year or relevant date
 
 The content validator fails when required metadata is absent or inconsistent.

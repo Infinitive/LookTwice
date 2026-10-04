@@ -24,12 +24,10 @@ Use Notes for:
 
 ## Things
 
-Things is for the recurrent objects, works, practices, or places that matter in the life of the project.
+Things is a catalogue of works and activities that keep returning in the life of the project. Each entry belongs to one of three editorial categories:
 
-Use Things for:
-
-- books, media, games, films, foods
-- routines or practices
-- places and recurring environments
+- Watching: films, anime, and television
+- Listening: albums, artists, and music
+- Doing: games, projects, activities, and other things that involve action
 
 Each collection follows the same metadata rules. The differences are in the shape of the content and the kinds of relationships it supports.

@@ -1,4 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';import {publicCollection} from '../../lib/content';const entries=await publicCollection('things');
+const categories=[
+  {id:'watching',label:'Watching',description:'Films and series that keep opening new frames.'},
+  {id:'listening',label:'Listening',description:'Artists and records that keep finding their way back into the room.'},
+  {id:'doing',label:'Doing',description:'Games and projects shaped by time, effort, and attention.'}
+].map(category=>({...category,entries:entries.filter(entry=>entry.data.category===category.id)}));
 ---
-<BaseLayout title="Things | LookTwice"><section class="page"><p class="eyebrow">03 / Returning</p><h1 class="page-title">Things</h1><p class="page-intro">A curated catalogue of what keeps returning after the immediate intensity fades.</p><div class="things">{entries.map(entry=><a class="thing" href={`/things/${entry.id}/`}><p class="eyebrow">{entry.data.kind}</p><h2>{entry.data.title}</h2><p>{entry.data.summary}</p></a>)}</div></section></BaseLayout>
+<BaseLayout title="Things | LookTwice"><section class="page"><p class="eyebrow">03 / Returning</p><h1 class="page-title">Things</h1><p class="page-intro">A curated catalogue of what keeps returning after the immediate intensity fades.</p><div class="things-categories">{categories.map(({id,label,description,entries:categoryEntries})=>categoryEntries.length>0&&<section class="things-category" aria-labelledby={`things-${id}`}><div class="things-category-heading"><h2 id={`things-${id}`}>{label}</h2><p>{description}</p></div><div class="things-grid">{categoryEntries.map(entry=><a class="thing" href={`/things/${entry.id}/`}><p class="eyebrow">{label}</p><h2>{entry.data.title}</h2><p>{entry.data.summary}</p><span class="thing-arrow" aria-hidden="true">↗</span></a>)}</div></section>)}</div></section></BaseLayout>

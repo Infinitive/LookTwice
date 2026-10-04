@@ -11,5 +11,5 @@ const shared = z.object({
 });
 const story = defineCollection({loader:glob({pattern:'**/*.{md,mdx}',base:'./src/content/story'}),schema:shared.extend({place:z.string().optional(),period:z.string().optional()})});
 const notes = defineCollection({loader:glob({pattern:'**/*.{md,mdx}',base:'./src/content/notes'}),schema:shared.extend({noteType:z.enum(['finished','unfinished','fragment']).default('unfinished')})});
-const things = defineCollection({loader:glob({pattern:'**/*.{md,mdx}',base:'./src/content/things'}),schema:shared.extend({kind:z.enum(['media','object','practice','place','food','project']),creator:z.string().optional(),year:z.union([z.string(),z.number()]).optional()})});
+const things = defineCollection({loader:glob({pattern:'**/*.{md,mdx}',base:'./src/content/things'}),schema:shared.extend({category:z.enum(['watching','listening','doing']),creator:z.string().optional(),year:z.union([z.string(),z.number()]).optional()})});
 export const collections={story,notes,things};

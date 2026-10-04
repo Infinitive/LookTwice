@@ -27,6 +27,8 @@ Example:
 
 Use pull quotes sparingly. They should feel like a sentence that is worth stopping on, not a decorative flourish.
 
+Use bold and italics with restraint: aim for one to three deliberate emphasis moments per piece.
+
 ## Privacy and boundaries
 
 The publication should avoid exposing personal information that would create risk for another person or a family member. Use names only when the context is intentional and safe. Keep the focus on the writer's experience rather than on exposing sensitive details about others.
